@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login/login.css"> 
+    <link rel="stylesheet" href="login/signup.css">  
+    <!-- connecting css pages -->
+
+    <script src="login/main.js"></script>
+    <script src="login/signup.js"></script>
+    <!-- connecting js pages -->
+
+    <title>SDC</title>
+    <!-- doc tittle -->
+
+    <link rel="icon" href="dancing.png">
+    <!-- icon -->
+
+</head>
+
+
+<body>
+    <div class = "main">
+      <h1 class="tittle fade-in-image"> Sign-in with clues on screen! </h1>
+      <div class="modal-content animate" action="/action_page.php" method="post">
+          <h1 id="login-header">Solve me!</h1>
+          <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+          </div>
+            <label for="uname"><b>Username == Username</b></label>
+            <input type="text" name="username" id="username" class="login-form-field" placeholder="Username">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="password" id="myInput" class="login-form-field" placeholder="Password"> <br>
+            <input class = "checkbox" type="checkbox" onclick="myFunction()"> Show Password <br>
+            <input class = "checkbox" type="checkbox" name="remember"> password is in blue <br>
+            <input class="button" type="button" onClick="handler()" value="Sign In" id="submit">            
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick = "handler()" class="cancelbtn">Sign Up</button>
+              <span class="psw"><a href="#">ForgotPassword?</a></span>
+            </div>
+      </div>
+    </div>
+
+</body>
+
+
+</html>
